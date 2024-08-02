@@ -30,7 +30,7 @@ export const signupUser=async(req,res) => {
         if (newUser){
             setCookie(newUser._id,res);
             await newUser.save();
-
+            
             res.status(201).json({
                 _id:newUser._id,
                 fullName:newUser.fullName,
@@ -63,7 +63,8 @@ try{
     res.status(200).json({
         _id:user._id,
         userName:user.userName,
-        password: user.password
+        password: user.password,
+        fullName:user.fullName
     })
 }
 catch(error){

@@ -1,0 +1,27 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "2816006f-f8e7-4fed-9c8a-ee6382358d1d",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1719674236176"
+        }
+      },
+      "favorite": {
+        "name": "Chat App",
+        "color": "color8"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb://icebear:always@localhost:27017/?authSource=chatApp",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
