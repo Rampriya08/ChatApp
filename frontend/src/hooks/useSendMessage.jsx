@@ -11,13 +11,16 @@ const useSendMessage=() => {
     const sendMessage = async (message) =>{
         setLoading(true);
         try {
-            const res =await fetch(`/api/message/send/${selectedConversation._id}`,{
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
+            const res = await fetch(
+              `https://chatapp-41d7.onrender.com/api/message/send/${selectedConversation._id}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
                 },
-                body:JSON.stringify({message})
-            })
+                body: JSON.stringify({ message }),
+              }
+            );
 
             const data=await res.json();
             if(data.error){

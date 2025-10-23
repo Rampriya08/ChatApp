@@ -12,7 +12,9 @@ useEffect(()=>{
         setLoading(true);
 
         try {
-            const res = await fetch('api/users');
+            const res = await fetch(
+              "https://chatapp-41d7.onrender.com/api/users"
+            );
             const data=await res.json();
             if(data.error){
                 throw new Error(data.error);
