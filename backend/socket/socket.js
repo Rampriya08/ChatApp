@@ -9,7 +9,7 @@ const io = new Server(server, {
   cors: {
     origin: [
       "http://localhost:3000",
-      "https://https://68f9f30db78ce10a5e5eee0d--starlit-brigadeiros-22b6f7.netlify.app",
+      "https://https://starlit-brigadeiros-22b6f7.netlify.app",
     ],
     methods: ["GET", "POST"],
   },
